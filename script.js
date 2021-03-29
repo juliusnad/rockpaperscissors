@@ -65,11 +65,11 @@ function game(userPlay) {
 }
     let userScore = 0;
     let computerScore = 0;
-    let gameNum = 0;
+    let gameNum = 1;
 
     // Game of 5 rounds with output of results - scores of both user and computer also number of games played.
-    for (gameNum; gameNum < 5; gameNum++) {
-        console.log(`Game ${gameNum}`);
+    for (gameNum; gameNum <= 5; gameNum++) {
+        console.log(`\nGame ${gameNum}\n`);
         /* let userPlay = prompt("Pick a move"); */
         console.log(game("rock"));
         console.log("your score = " + userScore);
