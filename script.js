@@ -4,7 +4,7 @@
 // Function for computer random item selection.
 function computerPlay() {
 
-    // Array of items for computer to randomly select from.
+    // Array of items for computer to randomly select from and return it.
     const wordArr = ["rock", "paper", "scissors"];
 
     const randomChoice = Math.floor(Math.random() * 3 + 1);
@@ -27,7 +27,7 @@ function game(userPlay) {
     // Users input trimmed from white sapce and convert it to lowercase.
     userPlay = userPlay.trim().toLowerCase();
 
-    // If else statement to make sure user inputs correct values.
+    // If else statement to make sure user inputs required values.
     if (userPlay === "rock" || userPlay === "paper" || userPlay === "scissors") {
 
         if (userPlay === computerSelect) {
@@ -59,7 +59,7 @@ function game(userPlay) {
     }
     else {
         // If user doesn't input correct value items then this message is sent.
-        return "You haven't selected: Rock, paper or scissors";
+        return "You haven't selected: Rock, Paper or Scissors";
     }
 
 }
@@ -67,7 +67,7 @@ function game(userPlay) {
     let computerScore = 0;
     let gameNum = 1;
 
-    // Game of 5 rounds with output of results - scores of both user and computer also number of games played.
+    // Game of 5 rounds using for loop with output of results on games played + winner + scores.
     for (gameNum; gameNum <= 5; gameNum++) {
         console.log(`\nGame ${gameNum}\n`);
         /* let userPlay = prompt("Pick a move"); */
