@@ -7,7 +7,7 @@ function computerPlay() {
     // Array of items for computer to randomly select from and return it.
     const wordArr = ["rock", "paper", "scissors"];
 
-    const randomChoice = Math.floor(Math.random() * 3 + 1);
+    const randomChoice = Math.floor(Math.random() * 3);
     
     if (randomChoice === 1) {
         return wordArr[0]; // Rock.
@@ -70,8 +70,8 @@ function game(userPlay) {
     // Game of 5 rounds using for loop with output of results on games played + winner + scores.
     for (gameNum; gameNum <= 5; gameNum++) {
         console.log(`\nGame ${gameNum}\n`);
-        /* let userPlay = prompt("Pick a move"); */
-        console.log(game("rock"));
+        let userPlay = prompt("Pick a move");
+        console.log(game(userPlay));
         console.log("your score = " + userScore);
         console.log("Computer's score = " + computerScore);
     }
