@@ -1,7 +1,7 @@
 // Odin Project - Rock Paper Scissors.
 
 
-// Function for computer random item selection.
+// Function for random item selection.
 function computerPlay() {
 
     // Array of items for computer to randomly select from and return it.
